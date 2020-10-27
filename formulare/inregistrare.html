@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 style="font-family: Calibri; font-size: 22pt; font-style: normal; font-weight: bold; color:Blue;
+            text-align: center; text-decoration: underline">Înregistrare student</h1>
+    <form action="" method="POST">
+        <table align="center" style="font-family: Calibri; color:white; font-size: 11pt; font-style: normal;
+            text-align:center; background-color: Blue; border:0 ;  "
+            <tr>
+                <td width="200">Nume</td>
+                <td>
+                    <input type="text" name="name">
+                </td>
+            </tr>
+            <tr>
+                <td>Data nașterii</td>
+                <td>
+                    <input type="date" name="birthday">
+                </td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td>
+                    <input type="email" name="emaail">
+                </td>
+            </tr>
+            <tr>
+                <td>Telefon de contact</td>
+                <td>
+                    <input type="tel" name="telefon">
+                </td>
+            </tr>
+            <tr>
+                <td>Gen</td>
+                <td>
+                    Masculin   <input type="radio" id="masculin" name="gender" value="Masculin">
+                    Feminin <input type="radio" id="feminin" name="Gender" value="Feminin" />
+                </td>
+            </tr>
+            <tr>
+                <td>Adresa
+                </td>
+                    <td><textarea name="Adresa" rows="4" cols="30"></textarea></td>
+            </tr>
+            <tr>
+                <td>Studii finisate</td>
+                <td>
+                    Diplomă de Bacalaureat
+                    <input type="radio" name="liceu" value="liceu">
+                    Diploma de Studii medii
+                    <input type="radio" name="colegiu" value="colegiu">
+                    Diplomă de studii superioare
+                    <input type="radio" name="licenta" value="licenta">
+                </td>
+            </tr>
+            <tr>
+                <td>Facultăți</td>
+                <td>
+                    Marketing
+                    <input type="radio" name="Cours_marketing" value="MRK">
+                    Informatică
+                    <input type="radio" name="Cours_INF" value="INF">
+                    Matematică
+                    <input type="radio" name="Cours_Matematica" value="Maths">
+                    Contabilitate
+                    <input type="radio" name="Cours_CNT" value="CNT">
+                 </td>
+            </tr>
+            <tr>
+                <td>Limba de studiere</td>
+                <td>
+                    Română
+                    <input type="checkbox" id="limba1" name="limba1" value="Română">
+                    Rusă 
+                    <input type="checkbox" id="limba2" name="limba2" value="Rusă">
+                    Engleză 
+                    <input type="checkbox" id="limba3" name="limba3" value="Engleză">
+                </td>
+            </tr>
+            <tr>
+                <td>Atașați documente</td>
+                <td>
+                    <input type="file" name="" id="act">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="right">
+                    <input type="submit" value="Aplicare la studii">
+                </td>
+            </tr>
+        </table>
+    </form>
+    
+</body>
+</html>
