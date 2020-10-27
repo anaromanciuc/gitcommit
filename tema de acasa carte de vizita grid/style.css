@@ -1,0 +1,38 @@
+.card{
+	border: 1px solid gray;
+	width: 400px;
+	height: 300px;
+	border-radius: 10px;
+	background:linear-gradient(pink,violet, purple,rgb(71, 1, 73));
+	box-shadow: 24px -1px 15px 8px rgba(85, 6, 46, 0.726);
+    padding:5px;   
+
+}
+
+.card h2{
+	font-family: Georgia;
+	text-transform: uppercase;
+    text-align: center;
+    grid-area:h2;
+}
+
+.card div .info {
+    grid-area: div;
+    text-align: center;
+}
+
+#imagine{
+    grid-area: imagine;
+    margin: 35px;
+ }
+
+article{
+    display: grid;
+    grid-template-areas:
+    "h2 h2"
+    "imagine div"
+    ". ."
+    ;
+	grid-template-rows: 1fr 2fr 1fr;
+    grid-template-columns: 1fr 1fr;
+}
