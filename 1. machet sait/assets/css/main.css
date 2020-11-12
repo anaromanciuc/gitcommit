@@ -1,0 +1,78 @@
+body{
+    display: grid;
+    grid-template-rows: 200px 40px auto 100px;
+    grid-template-columns:1fr 4fr 2fr 1fr ;
+    grid-template-areas: 
+    "header header header header"
+    ". nav nav ."
+    ". section aside ."
+    "footer footer footer footer"
+    ;
+}
+header{
+    background: #E6F3FF;
+    height: 200px;
+    grid-area: header;
+    grid-template-columns: 1fr 5fr;
+    display: grid;
+    
+}
+header img{
+    height: 200px;
+}
+header h1{
+    color: black;
+    font-size: 60px;
+    text-align: center;
+    line-height: 200px;
+    margin: 0;
+
+}
+nav{
+    background: rgba(196, 196, 196, 0.21);
+    grid-area: nav;
+}
+nav ul{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    gap:5px
+}
+nav ul li a{
+    background:#040c33:;
+    border-radius: 10px;
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+
+}
+nav ul li a.active{
+    background:#768AF3;
+
+
+}
+nav ul li a:hover{
+    background:#768AF3;
+    
+}
+section{
+    background: #eee;
+    height: 400px;
+    grid-area: section;
+
+}
+aside{
+    grid-area: aside;
+    background: rgb(172, 172, 74);
+}
+footer{
+    background: #140731;
+    color:white;
+    grid-area: footer;
+
+}
